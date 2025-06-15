@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catatan Tabungan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Catatan Tabungan</h1>
+    <input type="number" id="target" placeholder="Target Bulanan (Rp)" />
+    <div class="input-group">
+      <input type="text" id="catatan" placeholder="Catatan (misal: gaji, makan)" />
+      <input type="number" id="jumlah" placeholder="Jumlah (Rp)" />
+      <button onclick="tambahCatatan()">Tambah</button>
+    </div>
+    <ul id="daftar"></ul>
+    <canvas id="grafik"></canvas>
+    <div id="sisaTarget"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
